@@ -1,0 +1,28 @@
+.main {
+  /* background-image: url(../static/bg.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Pacifico', cursive;
+}
+
+.popUp {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.popUp {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

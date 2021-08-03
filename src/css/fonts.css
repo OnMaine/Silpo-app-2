@@ -1,0 +1,12 @@
+@font-face {
+   font-family: 'AMATICSC bold';
+   src: url('../static/fonts/AMATICSC-BOLD.TTF')
+}
+@font-face {
+   font-family: 'AMATICSC regular';
+   src: url('../static/fonts/AMATICSC-REGULAR.TTF')
+}
+@font-face {
+   font-family: 'BAHNSCHRIFT regular';
+   src: url('../static/fonts/BAHNSCHRIFT.TTF')
+}

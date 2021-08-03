@@ -16,6 +16,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     fullscreen: true,
+    icon: __dirname + '/static/icon.ico',
   });
 
   // and load the index.html of the app.
@@ -57,6 +58,6 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
-const { Menu } = require('electron');
+// const { Menu } = require('electron');
 
-Menu.setApplicationMenu(null);
+// Menu.setApplicationMenu(null);

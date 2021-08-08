@@ -10,17 +10,11 @@
 }
 
 .popUp {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
-}
-
-.popUp {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;

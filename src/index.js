@@ -1,5 +1,21 @@
 import { app, BrowserWindow } from 'electron';
 
+const http = require('http')
+const express = require('express')
+const expressApp = express()
+const cors = require('cors')
+const router = express.Router()
+const path = require('path')
+
+expressApp.use(cors())
+router.get('/file/:name', function (req, res) {
+  let filename = req.params.name
+  if (!filename.includes('.mp4')) throw new Error('wrong file')
+  res.sendFile(path.join(__dirname, 'static', 'flowers', filename))
+})
+expressApp.use('/', router)
+http.createServer(expressApp).listen(8000)
+
 var $ = require('jQuery');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -19,7 +35,7 @@ const createWindow = () => {
     fullscreen: true,
     icon: __dirname + '/static/icon.ico',
     webPreferences: {
-      webSecurity: false,
+      webSecurity: true,
     },
   });
 

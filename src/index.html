@@ -2,62 +2,18 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta httpEquiv="Content-Security-Policy" content="media-src file://*;"/>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="main">
-      <div class="container text-box">
-        <!-- <div class="row h-100">
-          <div class="col-12 d-flex justify-content-center align-items-center">
-            <div id="pred" class="pred d-flex justify-content-center flex-column align-items-center">
-            </div>
-          </div>
-        </div> -->
-      </div>
-
-
+    </div>
     <div id="popUp" class="popUp">
-      <div class="container">
-        <div class="row d-flex justify-content-between">
-          <div class="col-6 d-flex justify-content-center align-items-center flex-row">
-            <div class="prediction-img" id="prediction-img"></div>
-          </div>
-          <div class="col-6 d-flex justify-content-center align-items-center flex-column">
-            <div class="logo">
-              <img id="logo" class="img-fluid" src="static/logo.png" alt="logo-png">
-            </div>
-            <div class="flower-title text-center">
-              <h1 class="flower-name" id="flower-name"></h1>
-              <p class="prediction-title" id="prediction-title"></p>
-            </div>
-            <div class="prediction-container">
-              <img id="prediction-cloud" class="img-fluid prediction-cloud" src="static/cloud.png" alt="prediction-cloud">
-              <p class="prediction-message" id="prediction-message"></p>
-            </div> 
-            <div class="social d-flex justify-content-center align-items-center flex-column">
-              <div class="social-icon d-flex justify-content-center align-items-center flex-row">
-                <div class="facebook">
-                  <img id="facebook" src="static/facebook.png" alt="facebook-img">
-                </div>
-                <div class="insta">
-                  <img id="insta" src="static/insta.png" alt="insta-img">
-                </div>
-              </div>
-              <div class="social-title">
-                <p>Поділися результатом у соціальних мережах та відмічай 
-                  <span class="line-box">&#64; silpo
-                    <img id="line" src="static/line.png" alt="line">
-                  </span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <video muted>
+        <!-- <source src="static/flowers/Eustoma.mp4" type="video/mp4"> -->
+      </video>
     </div>
-    </div>
-
     <!-- You can also require other files to run in this process -->
     <script src="renderer.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>

@@ -1,4 +1,5 @@
 import { app, BrowserWindow } from 'electron';
+
 var $ = require('jQuery');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -17,6 +18,9 @@ const createWindow = () => {
     height: 600,
     fullscreen: true,
     icon: __dirname + '/static/icon.ico',
+    webPreferences: {
+      webSecurity: false,
+    },
   });
 
   // and load the index.html of the app.
